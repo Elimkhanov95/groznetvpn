@@ -11,20 +11,42 @@
             background: #f5f7fa;
             color: #222;
         }
+
+        /* ШАПКА */
         header {
             background: #0f172a;
             color: #fff;
-            padding: 60px 20px;
+            padding: 40px 20px 60px 20px;
             text-align: center;
         }
+
+        /* МЕНЮ */
+        nav {
+            margin-bottom: 25px;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* Заголовок */
         header h1 {
             font-size: 48px;
             margin-bottom: 10px;
         }
+
         header p {
             font-size: 20px;
             margin-bottom: 30px;
         }
+
         .btn {
             display: inline-block;
             margin: 10px;
@@ -35,29 +57,35 @@
             border-radius: 6px;
             font-size: 16px;
         }
+
         .btn.secondary {
             background: #64748b;
         }
+
         section {
             padding: 60px 20px;
             max-width: 1000px;
             margin: auto;
         }
+
         h2 {
             text-align: center;
             margin-bottom: 40px;
         }
+
         .features, .pricing {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 20px;
         }
+
         .card {
             background: #fff;
             padding: 25px;
             border-radius: 8px;
             text-align: center;
         }
+
         footer {
             background: #e5e7eb;
             text-align: center;
@@ -69,8 +97,19 @@
 <body>
 
 <header>
+
+    <!-- МЕНЮ -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="tariffs.html">Тарифы</a>
+        <a href="setup.html">Как подключиться</a>
+        <a href="download.html">Скачать</a>
+        <a href="support.html">Поддержка</a>
+    </nav>
+
     <h1>GrozNetVPN</h1>
     <p>Стабильный VPN с честной ценой</p>
+
     <a href="#" class="btn">Попробовать бесплатно 7 дней</a>
     <a href="#" class="btn secondary">Купить 3 месяца за 300 ₽</a>
 </header>
